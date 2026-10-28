@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{if(localStorage.getItem("ce-theme")==="dark")document.documentElement.classList.add("dark");}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>طراحی پایگاه داده | CompMate</title>
+<link rel="preload" href="../assets/fonts/Vazirmatn-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/ds-detail.css">
+</head>
+<body data-page="resources.html">
+<header class="site-header">
+    <div class="container-xl nav-wrap">
+      <a href="../index.html" class="brand">
+        <span class="logo"><img src="../assets/img/logo.png" alt="" width="64" height="64"></span>
+        <span class="brand-text"><span class="title" dir="ltr">CompMate</span><span class="subtitle">دستیار دانشجوی کامپیوتر</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html" class="">خانه</a>
+        <a href="../resources.html" class="active">منابع آموزشی</a>
+        <a href="../paths.html" class="">مسیرهای یادگیری</a>
+        <a href="../soft-skills.html" class="">مهارت‌های نرم</a>
+        <a href="../qa.html" class="">پرسش و پاسخ</a>
+        <a href="../students.html" class="">مشاوره</a>
+        <a href="../about.html" class="">درباره ما</a>
+        <a href="../contact.html" class="">تماس با ما</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="حالت تیره"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+        <button class="icon-btn mobile-menu-btn hamburger" id="menuToggle" aria-label="منو" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html" class="">خانه</a>
+        <a href="../resources.html" class="active">منابع آموزشی</a>
+        <a href="../paths.html" class="">مسیرهای یادگیری</a>
+        <a href="../soft-skills.html" class="">مهارت‌های نرم</a>
+        <a href="../qa.html" class="">پرسش و پاسخ</a>
+        <a href="../students.html" class="">مشاوره</a>
+        <a href="../about.html" class="">درباره ما</a>
+        <a href="../contact.html" class="">تماس با ما</a>
+    </div>
+  </header>
+<main class="container-xl page-main-lg ds-main">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-book-open" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol><symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol><symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-books" viewBox="0 0 24 24"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></symbol><symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol><symbol id="i-pencil" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></symbol><symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol><symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="m6 3 14 9-14 9z"/></symbol><symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol><symbol id="i-ram" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10v4M10 10v4M14 10v4M18 10v4"/></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol><symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></symbol></svg>
+<div class="ds-progress" id="dsp"></div>
+<section class="ds-hero rv">
+  <svg class="ds-deco" viewBox="0 0 240 200" aria-hidden="true"><path class="e" d="M70 100H92M148 100H170"/><rect x="14" y="68" width="60" height="64" rx="10" style="fill:hsl(var(--card));stroke:currentColor;stroke-width:2.5"/><rect x="166" y="68" width="60" height="64" rx="10" style="fill:hsl(var(--card));stroke:currentColor;stroke-width:2.5"/><path d="M120 66 150 100 120 134 90 100Z" style="fill:hsl(var(--card));stroke:currentColor;stroke-width:2.5"/><path class="e" d="M28 88H60M28 100H60M28 112H60M180 88H212M180 100H212M180 112H212" style="stroke-opacity:.8"/></svg>
+  <div class="ds-crumb text-muted"><a href="../resources.html">منابع آموزشی</a> ‹ طراحی پایگاه داده</div>
+  <div class="ds-chips"><span class="ds-chip">ترم ۵ (پیشنهادی)</span><span class="ds-chip">سطح متوسط</span></div>
+  <h1 class="ds-title">طراحی پایگاه داده<small dir="ltr">Database Design</small></h1>
+  <p class="ds-lede text-muted">طراحی پایگاه داده نشان می‌دهد داده‌ها را چگونه مدل‌سازی، نرمال و پیاده‌سازی کنیم تا پایگاه داده‌ی شما سریع و پایدار بماند.</p>
+</section>
+<nav class="ds-nav" aria-label="بخش‌های صفحه">
+  <a href="#intro" data-l="معرفی درس" class="on"><svg class="ic" aria-hidden="true"><use href="#i-book-open"/></svg><span>معرفی</span></a>
+  <a href="#resources" data-l="منابع یادگیری"><svg class="ic" aria-hidden="true"><use href="#i-compass"/></svg><span>منابع</span></a>
+  <a href="#konkur" data-l="کنکور ارشد"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg><span>کنکور</span></a>
+  <a href="#olympiad" data-l="المپیاد"><svg class="ic" aria-hidden="true"><use href="#i-trophy"/></svg><span>المپیاد</span></a>
+  <a href="#comments" data-l="نظرات و پیشنهادها"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg><span>نظرات</span></a>
+</nav>
+
+<section class="ds-sec rv" id="intro">
+  <h2 class="ds-h"><span class="ds-num">۱</span><span class="ds-ht">معرفی درس<small dir="ltr">Introduction</small></span></h2>
+  <div class="ds-callout rv"><p class="ds-p">همون‌طور که از اسم درس معلومه، تو این درس یاد می‌گیرید چجوری پایگاه داده‌تون رو، جدا از بحث پیاده‌سازی، اول به‌صورت بهینه طراحی کنید.</p><p class="ds-p">چه فایده‌ای داره و چرا اصلاً مهمه؟ وقتی حجم داده‌ها خیلی زیاده، سرعت جست‌وجوی چیزی (Record) که شما می‌خواید، مستقیماً به طراحی شما گره خورده. هرچقدر اصولی‌تر طراحی کرده باشید، پایگاه داده‌تون در بلندمدت قراره بیشتر و بهتر دووم بیاره.</p></div>
+  <div class="ds-syllabus rv"><div class="ds-syl-head"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg><b>سرفصل‌های درس<small dir="ltr">Course Syllabus</small></b><span>۸ موضوع</span></div><ol><li><span class="t">مقدمه‌ای بر سیستم‌های پایگاه داده<small dir="ltr">Introduction to Database Systems</small></span></li><li><span class="t">مدل‌سازی ER و EER<small dir="ltr">ER &amp; EER Modeling</small></span></li><li><span class="t">مدل رابطه‌ای<small dir="ltr">The Relational Model</small></span></li><li><span class="t">جبر رابطه‌ای و حساب رابطه‌ای<small dir="ltr">Relational Algebra &amp; Calculus</small></span></li><li><span class="t">زبان SQL<small dir="ltr">SQL</small></span></li><li><span class="t">وابستگی تابعی و نرمال‌سازی<small dir="ltr">Functional Dependencies &amp; Normalization</small></span></li><li><span class="t">ایندکس‌گذاری و بهینه‌سازی Query<small dir="ltr">Indexing &amp; Query Optimization</small></span></li><li><span class="t">تراکنش‌ها و کنترل هم‌زمانی<small dir="ltr">Transactions &amp; Concurrency Control</small></span></li></ol></div>
+  <h3 class="ds-sub">دید کلی<small dir="ltr">The Big Picture</small></h3>
+  <p class="ds-p">اگه بخوام یه دید کلی بدم، پایگاه دادهٔ رابطه‌ای تشکیل شده از یه‌سری جدول دربارهٔ چیزهایی که می‌خواید راجع بهشون اطلاعات نگه دارید (مثال رایجش می‌شه دانشجو، درس، استاد و…). این‌که چرا شکلشون جدولیه هم برمی‌گرده به رابطه‌هایی که توی درس گسسته خوندید!</p><ol class="ds-mini"><li>اول پایگاه داده رو طراحی می‌کنید (با یه‌سری نمودار به اسم ER و EER)،</li><li>بعد تمیزش می‌کنید (Normalization)، چون احتمالاً یه‌سری چیزها رو الکی دارید تکرار می‌کنید (Redundancy)،</li><li>و بعد پیاده‌سازیش می‌کنید (SQL).</li></ol><p class="ds-p">این مسیر طراحی تا پیاده‌سازی (بالا به پایین)، هم شامل ظرف‌های داده‌تون می‌شه (همون جدول‌ها) و هم سوال‌هایی که قراره ازش بپرسید (Query).</p><div class="ds-dbd rv"><div class="dbd-top"><b>داده (بانک اطلاعات)</b><small dir="ltr">Data (Database)</small></div><div class="dbd-cols"><span>ظرف‌های داده<small dir="ltr">Tables</small></span><span>سوال‌ها<small dir="ltr">Queries</small></span></div><div class="dbd-ar"><i></i><i></i></div><div class="dbd-stage"><div class="dbd-lab"><span class="sn">۱</span><div><b>تحلیل</b><small dir="ltr">Analysis</small><p>طراحی ادراکی (مفهومی) یا ادراکی عام</p><em>توسط <bdi dir="ltr">DA</bdi></em></div></div><div class="dbd-cell"><b>تحلیل موجودیت‌ها</b><small dir="ltr">Entity Analysis</small><span class="mt" dir="ltr">ERD</span></div><div class="dbd-cell"><b>تحلیل پرس‌وجوها</b><small dir="ltr">Query Analysis</small><span class="mt" dir="ltr">Relational Calculus</span></div></div><div class="dbd-ar"><i></i><i></i></div><div class="dbd-stage"><div class="dbd-lab"><span class="sn">۲</span><div><b>طراحی</b><small dir="ltr">Design</small><p>طراحی منطقی یا ادراکی خاص</p><em>توسط <bdi dir="ltr">DBA</bdi></em></div></div><div class="dbd-cell"><b>طراحی جدول‌ها</b><small dir="ltr">Table Design</small><span class="mt" dir="ltr">Relational Model</span></div><div class="dbd-cell"><b>طراحی پرس‌وجوها</b><small dir="ltr">Query Design</small><span class="mt" dir="ltr">Relational Algebra</span></div></div><div class="dbd-ar"><i></i><i></i></div><div class="dbd-stage"><div class="dbd-lab"><span class="sn">۳</span><div><b>پیاده‌سازی</b><small dir="ltr">Implementation</small><em>توسط <bdi dir="ltr">DBP</bdi></em></div></div><div class="dbd-cell"><b>پیاده‌سازی جدول‌ها</b><small dir="ltr">Table Implementation</small><span class="mt" dir="ltr">SQL · DDL</span></div><div class="dbd-cell"><b>پیاده‌سازی پرس‌وجوها</b><small dir="ltr">Query Implementation</small><span class="mt" dir="ltr">SQL · DML</span></div></div></div><p class="ds-quote">این‌ها رو گفتم که جا بندازم: اگه فکر می‌کنید طراحی پایگاه داده همون SQL هست، دیگه با همچین دیدی بهش نگاه نکنید. SQL فقط یه بخش از این درسه، نه همهٔ ماجرا.</p>
+</section>
+
+<section class="ds-sec rv" id="resources">
+  <h2 class="ds-h"><span class="ds-num">۲</span><span class="ds-ht">منابع یادگیری<small dir="ltr">Learning Resources</small></span></h2>
+  <ol class="ds-steps"><li class="ds-step rv"><span class="ds-dot">۱</span><div class="ds-body">
+      <h3>ویدیوها<small dir="ltr">Video Courses</small></h3>
+      <p class="ds-p">برای این درس، من خودم ویدیوهای مکتب‌خونهٔ دانشگاه شریف از استاد امینی رو دیدم و به نظرم خیلی خوب بود؛ ولی این مدت تعریف استاد ورمزیار رو خیلی بیشتر شنیدم، برای همین اولویت رو می‌ذارم با استاد ورمزیار.</p><div class="ds-res"><a class="ds-card" href="https://t.me/manabe_cshub/297" target="_blank" rel="noopener"><span class="ds-ico"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></span><span><b>ویدیوهای استاد ورمزیار</b><small>کانال تلگرام · اولویت اول</small></span></a><a class="ds-card" href="https://maktabkhooneh.org/course/%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87-%D8%AF%D8%A7%D8%AF%D9%87-mk214/" target="_blank" rel="noopener"><span class="ds-ico"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></span><span><b>استاد امینی</b><small>دانشگاه شریف · مکتب‌خونه</small></span></a></div>
+    </div></li><li class="ds-step rv"><span class="ds-dot">۲</span><div class="ds-body">
+      <h3>تمرین SQL<small dir="ltr">SQL Practice</small></h3>
+      <p class="ds-p">برای تمرین SQL، این سایت هم باحاله و هم آموزنده؛ تعداد تمرین‌هاش هم زیاد نیست، برای همین پیشنهاد می‌کنم همه‌ش رو حل کنید:</p><div class="ds-res"><a class="ds-card" href="https://sqlbolt.com/" target="_blank" rel="noopener"><span class="ds-ico"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg></span><span><b dir="ltr">SQLBolt</b><small>تمرین تعاملی SQL</small></span></a></div><p class="ds-p">سایت W3Schools هم خوب بود.</p><div class="ds-res"><a class="ds-card" href="https://www.w3schools.com/sql/" target="_blank" rel="noopener"><span class="ds-ico"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg></span><span><b dir="ltr">W3Schools</b><small>آموزش و مثال SQL</small></span></a></div>
+    </div></li>
+  </ol>
+  <h3 class="ds-sub">پیشنهادی<small dir="ltr">Suggested</small></h3>
+  <ol class="ds-steps"><li class="ds-step rv"><span class="ds-dot">۱</span><div class="ds-body">
+      <h3>ساخت یک برنامه با PHP<small dir="ltr">Build an App with PHP</small></h3>
+      <p class="ds-p">زبان PHP رو در حد یه پیاده‌سازی ساده و وصل کردن به دیتابیس یاد بگیرید (صرفاً چون ساده‌ست). بعد یه برنامه بنویسید که توش تمرکز اصلی‌تون روی طراحی پایگاه داده و پیاده‌سازیش باشه (برای خودتون نمودارها رو بکشید).</p><p class="ds-p">بعدش فقط UI می‌مونه که می‌تونید یا با Android یا با یه سایت جمع‌وجورش کنید.</p><p class="ds-p">موضوع برنامه هم می‌تونه هر چیزی باشه؛ مثلاً:</p><ul class="ds-bullets"><li>لیست غذا و رستوران</li><li>کتاب‌ها و دسته‌بندی‌هاشون</li><li>لغات زبان و دسته‌بندی‌هاشون</li><li>یا حتی یه بانک سوال شخصی برای خودتون</li></ul>
+    </div></li>
+  </ol>
+</section>
+
+<section class="ds-sec rv" id="konkur">
+  <h2 class="ds-h"><span class="ds-num">۳</span><span class="ds-ht">کنکور ارشد<small dir="ltr">Graduate Entrance Exam</small></span></h2>
+  <div class="ds-soon"><div class="ds-soon-ico"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg></div><div><b>محتوای این بخش به‌زودی اضافه می‌شود</b><p>منابع و تجربه‌های مخصوص کنکور ارشد در همین بخش قرار می‌گیرد.</p></div></div>
+</section>
+
+<section class="ds-sec rv" id="olympiad">
+  <h2 class="ds-h"><span class="ds-num">۴</span><span class="ds-ht">المپیاد دانشجویی<small dir="ltr">Student Olympiad</small></span></h2>
+  <div class="ds-soon"><div class="ds-soon-ico"><svg class="ic" aria-hidden="true"><use href="#i-trophy"/></svg></div><div><b>محتوای این بخش به‌زودی اضافه می‌شود</b><p>منابع و تجربه‌های مخصوص المپیاد دانشجویی در همین بخش قرار می‌گیرد.</p></div></div>
+</section>
+
+<section class="ds-sec rv" id="comments">
+  <h2 class="ds-h"><span class="ds-num">۵</span><span class="ds-ht">نظرات و پیشنهادها<small dir="ltr">Comments &amp; Suggestions</small></span></h2>
+  <p class="ds-p">اگه برای این درس برنامه‌ای (مثلاً با PHP) نوشتید یا نمودار ER و EER ای کشیدید، خوشحال می‌شیم لینکش را (GitHub یا هر جای دیگه) همین‌جا برامون بگذارید. منبع جدید، تجربه‌ی شخصی، اشتباه در متن و لینک خراب را هم همین‌جا بنویسید؛ نظرهای شما به بهتر شدن این مرجع کمک می‌کند.</p>
+  <ul class="ds-ask"><li><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg>لینک پروژه‌ی پیاده‌سازی‌شده</li><li><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg>پیشنهاد پروژه</li><li><svg class="ic" aria-hidden="true"><use href="#i-books"/></svg>معرفی منبع جدید</li><li><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>گزارش لینک خراب</li><li><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg>اشتباه یا ابهام در متن</li><li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>پرسش درباره‌ی درس</li></ul>
+  <div class="ds-comments">
+    <div class="ds-comments-head"><div class="ds-soon-ico"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg></div><div><b>گفت‌وگو درباره‌ی این صفحه</b><small>برای ثبت نظر لازم است با حساب GitHub وارد شوید.</small></div></div>
+    <div id="giscus-box"></div>
+  </div>
+</section>
+</main>
+<footer>
+    <div class="container-xl footer-inner">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="brand">
+            <span class="logo"><img src="../assets/img/logo.png" alt="" width="64" height="64"></span>
+            <span class="title" dir="ltr">CompMate</span>
+          </a>
+          <p>
+            یک مرجع آموزشی برای دانشجویان مهندسی کامپیوتر؛ شامل منابع درسی، مسیرهای یادگیری، مهارت‌های نرم و تجربیات مشاوره.
+          </p>
+        </div>
+        <div class="footer-columns">
+          <div>
+            <h3 class="footer-heading">دسترسی سریع</h3>
+            <ul class="footer-list text-muted">
+              <li><a href="../resources.html">منابع آموزشی</a></li>
+              <li><a href="../paths.html">مسیرهای یادگیری</a></li>
+              <li><a href="../soft-skills.html">مهارت‌های نرم</a></li>
+              <li><a href="../students.html">مشاوره</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">ارتباط با ما</h3>
+            <ul class="footer-list text-muted">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:contact@ce-reference.ir">contact@ce-reference.ir</a></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg><a href="https://github.com" target="_blank" rel="noreferrer">گیت‌هاب پروژه</a></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>دانشگاه — ایران</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-muted">
+        <p>© ۱۴۰۵ CompMate — تمام حقوق محفوظ است.</p>
+        <p class="font-mono-accent">Built with ♥ for CE Students</p>
+      </div>
+    </div>
+  </footer>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/comments.js"></script>
+<script>
+document.documentElement.classList.add('js');
+(function(){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08});document.querySelectorAll('.rv').forEach(function(n){io.observe(n)})})();
+(function(){var l=[].slice.call(document.querySelectorAll('.ds-nav a')),s=l.map(function(a){return document.querySelector(a.getAttribute('href'))});
+function f(){var y=window.scrollY+160,i=0;s.forEach(function(e,k){if(e.offsetTop<=y)i=k});l.forEach(function(a,k){a.classList.toggle('on',k==i)})}
+var pb=document.getElementById('dsp');function g(){var h=document.documentElement;pb.style.transform='scaleX('+Math.min(1,scrollY/(h.scrollHeight-innerHeight||1))+')'}addEventListener('scroll',function(){f();g()},{passive:true});f();g()})();
+</script>
+<script>
+document.querySelectorAll('.ds-copy').forEach(function(b){b.addEventListener('click',function(){var t=b.closest('.ds-codewrap').querySelector('code').innerText;var ok=function(){b.textContent='کپی شد';setTimeout(function(){b.textContent='کپی'},1500)};if(navigator.clipboard){navigator.clipboard.writeText(t).then(ok)}})});
+</script>
+</body>
+</html>

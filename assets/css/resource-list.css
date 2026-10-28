@@ -1,0 +1,58 @@
+/* =========================================================================
+   resource-list.css — resources.html only
+   ========================================================================= */
+
+.page-head { margin-bottom: 2rem; }
+.page-eyebrow { font-size: .85rem; font-weight: 600; margin-bottom: .4rem; }
+.page-title { font-size: clamp(1.5rem, 4vw + .5rem, 1.9rem); font-weight: 800; margin: 0 0 .6rem; }
+.page-lede { max-width: 36rem; line-height: 1.8; }
+
+.filter-panel { padding: 1.25rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+/* .filter-panel reuses .card for the background/border, but it's a static
+   control panel, not a clickable card — the site-wide hover-lift (translateY
+   + shadow) made the whole panel (and the search input above it) visibly
+   shift every time a filter chip inside it was clicked. Disable it here. */
+.filter-panel:hover { transform: none; box-shadow: none; }
+.filter-panel { animation: none; }
+.filter-groups { display: flex; flex-wrap: wrap; gap: 1.5rem 2rem; }
+.filter-group-label { font-size: .75rem; margin-bottom: .4rem; }
+.filter-chip-row { display: flex; gap: .4rem; flex-wrap: wrap; }
+.filter-group-term { flex: 1 1 100%; }
+@media (min-width: 900px) { .filter-group-term { flex: 1 1 auto; } }
+
+/* ---------- Chart promo card ---------- */
+.chart-promo-card {
+  display: flex; flex-direction: column; overflow: hidden; margin-bottom: 1.5rem;
+  border-color: hsl(var(--primary) / .18);
+}
+.chart-promo-preview {
+  position: relative; background: hsl(var(--muted) / .4);
+  border-bottom: 1px solid hsl(var(--border));
+  padding: 1rem 1.25rem;
+}
+.chart-promo-svg { display: block; width: 100%; height: auto; max-height: 8.5rem; }
+.chart-promo-svg rect { transition: transform .35s cubic-bezier(.34,1.56,.64,1); transform-box: fill-box; transform-origin: center; }
+.chart-promo-card:hover .chart-promo-svg rect { transform: translateY(-1px); }
+.chart-promo-fade {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, transparent 55%, hsl(var(--muted) / .9));
+}
+html.dark .chart-promo-fade { background: linear-gradient(90deg, transparent 55%, hsl(var(--muted) / .85)); }
+
+.chart-promo-body { display: flex; align-items: center; gap: 1rem; padding: 1.25rem; flex-wrap: wrap; }
+.chart-promo-icon { flex-shrink: 0; }
+.chart-promo-text { flex: 1; min-width: 14rem; }
+.chart-promo-text h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 .3rem; }
+.chart-promo-text p { font-size: .875rem; line-height: 1.6; margin: 0; }
+.chart-promo-cta { flex-shrink: 0; pointer-events: none; }
+
+.result-count { margin-bottom: 1rem; font-size: .9rem; }
+
+.course-card { padding: 1.25rem; display: flex; flex-direction: column; }
+.course-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+.course-card h3 { font-size: 1.1rem; font-weight: 700; margin: 0 0 .2rem; }
+.course-card .course-en { font-size: .75rem; margin: 0 0 .75rem; }
+.course-card .course-desc { font-size: .875rem; line-height: 1.7; flex: 1; margin: 0 0 1rem; }
+.course-card-tags { display: flex; flex-wrap: wrap; gap: .4rem; border-top: 1px solid hsl(var(--border)); padding-top: .75rem; }
+
+#noResults { display: none; }

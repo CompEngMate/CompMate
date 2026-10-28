@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{if(localStorage.getItem("ce-theme")==="dark")document.documentElement.classList.add("dark");}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ساختمان داده | CompMate</title>
+<link rel="preload" href="../assets/fonts/Vazirmatn-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/ds-detail.css">
+</head>
+<body data-page="resources.html">
+<header class="site-header">
+    <div class="container-xl nav-wrap">
+      <a href="../index.html" class="brand">
+        <span class="logo"><img src="../assets/img/logo.png" alt="" width="64" height="64"></span>
+        <span class="brand-text"><span class="title" dir="ltr">CompMate</span><span class="subtitle">دستیار دانشجوی کامپیوتر</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html" class="">خانه</a>
+        <a href="../resources.html" class="active">منابع آموزشی</a>
+        <a href="../paths.html" class="">مسیرهای یادگیری</a>
+        <a href="../soft-skills.html" class="">مهارت‌های نرم</a>
+        <a href="../qa.html" class="">پرسش و پاسخ</a>
+        <a href="../students.html" class="">مشاوره</a>
+        <a href="../about.html" class="">درباره ما</a>
+        <a href="../contact.html" class="">تماس با ما</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="حالت تیره"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+        <button class="icon-btn mobile-menu-btn hamburger" id="menuToggle" aria-label="منو" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html" class="">خانه</a>
+        <a href="../resources.html" class="active">منابع آموزشی</a>
+        <a href="../paths.html" class="">مسیرهای یادگیری</a>
+        <a href="../soft-skills.html" class="">مهارت‌های نرم</a>
+        <a href="../qa.html" class="">پرسش و پاسخ</a>
+        <a href="../students.html" class="">مشاوره</a>
+        <a href="../about.html" class="">درباره ما</a>
+        <a href="../contact.html" class="">تماس با ما</a>
+    </div>
+  </header>
+<main class="container-xl page-main-lg ds-main">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-book-open" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol><symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol><symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-books" viewBox="0 0 24 24"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></symbol><symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol><symbol id="i-pencil" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></symbol><symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></symbol></svg>
+<div class="ds-progress" id="dsp"></div>
+<section class="ds-hero">
+  <svg class="ds-deco" viewBox="0 0 240 200" aria-hidden="true"><line x1="120" y1="30" x2="60" y2="90"/><line x1="120" y1="30" x2="180" y2="90"/><line x1="60" y1="90" x2="30" y2="160"/><line x1="60" y1="90" x2="90" y2="160"/><line x1="180" y1="90" x2="150" y2="160"/><line x1="180" y1="90" x2="210" y2="160"/><circle cx="120" cy="30" r="20"/><circle cx="60" cy="90" r="18"/><circle cx="180" cy="90" r="18"/><circle cx="30" cy="160" r="15"/><circle cx="90" cy="160" r="15"/><circle cx="150" cy="160" r="15"/><circle class="f" cx="210" cy="160" r="15"/></svg>
+  <div class="ds-crumb text-muted"><a href="../resources.html">منابع آموزشی</a> ‹ ساختمان داده</div>
+  <div class="ds-chips"><span class="ds-chip">ترم ۳ (پیشنهادی)</span><span class="ds-chip">سطح متوسط</span></div>
+  <h1 class="ds-title">ساختمان داده<small dir="ltr">Data Structures</small></h1>
+  <p class="ds-lede text-muted">ساختمان داده به شما یاد می‌دهد داده‌ها را چگونه سازمان‌دهی و ذخیره کنید تا بتوان آن‌ها را سریع و با کم‌ترین مصرف حافظه پردازش کرد. آرایه، لیست پیوندی، پشته، صف، درخت و گراف از مهم‌ترین مباحث این درس هستند.</p>
+</section>
+<nav class="ds-nav" aria-label="بخش‌های صفحه">
+  <a href="#intro" data-l="معرفی درس" class="on"><svg class="ic" aria-hidden="true"><use href="#i-book-open"/></svg><span>معرفی</span></a>
+  <a href="#resources" data-l="منابع یادگیری"><svg class="ic" aria-hidden="true"><use href="#i-compass"/></svg><span>منابع</span></a>
+  <a href="#konkur" data-l="کنکور ارشد"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg><span>کنکور</span></a>
+  <a href="#olympiad" data-l="المپیاد"><svg class="ic" aria-hidden="true"><use href="#i-trophy"/></svg><span>المپیاد</span></a>
+  <a href="#comments" data-l="نظرات و پیشنهادها"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg><span>نظرات</span></a>
+</nav>
+
+<section class="ds-sec rv" id="intro">
+  <h2 class="ds-h"><span class="ds-num">۱</span><span class="ds-ht">معرفی درس<small dir="ltr">Introduction</small></span></h2>
+  
+  <div class="ds-callout rv"><strong>چرا این درس مهم است؟</strong>
+
+
+
+
+نکته‌ای که خیلی مهمه و دونستنش کمک زیادی به شما می‌کنه، اهمیت این دو درس (ساختمان داده و طراحی الگوریتم) برای رشته‌ی کامپیوتره. صادقانه بگم، هر چقدر این دو درس را بهتر بخونید و یاد بگیرید، بارتون رو برای لیسانس بستید. تقریباً تمام درس‌هایی که بعد از این دو درس می‌خونید، به یه نحوی به این دو درس وابسته‌اند. اگر این دو درس رو خوب بخونید، کارتون رو راحت کردید و جلو افتادید؛ اگر نه، همیشه یه جای کار می‌لنگه.
+
+
+</div>
+
+
+  <div class="ds-syllabus rv"><div class="ds-syl-head"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg><b>سرفصل‌های درس<small dir="ltr">Course Syllabus</small></b><span>۱۲ موضوع</span></div><ol><li><span class="t">مفاهیم پایه و تحلیل الگوریتم‌ها (پیچیدگی زمانی و حافظه، نمادهای مجانبی)<small dir="ltr">Algorithm Analysis &amp; Asymptotic Notation</small></span></li><li><span class="t">آرایه‌ها و رشته‌ها<small dir="ltr">Arrays &amp; Strings</small></span></li><li><span class="t">لیست‌های پیوندی (یک‌طرفه، دوطرفه و حلقوی)<small dir="ltr">Linked Lists</small></span></li><li><span class="t">پشته و کاربردهای آن<small dir="ltr">Stacks</small></span></li><li><span class="t">صف و صف اولویت‌دار<small dir="ltr">Queues &amp; Priority Queues</small></span></li><li><span class="t">توابع بازگشتی<small dir="ltr">Recursion</small></span></li><li><span class="t">درخت‌ها و درخت‌های دودویی<small dir="ltr">Trees &amp; Binary Trees</small></span></li><li><span class="t">درخت جست‌وجوی دودویی و درخت‌های متوازن<small dir="ltr">Binary Search Trees &amp; AVL Trees</small></span></li><li><span class="t">هرم<small dir="ltr">Heaps</small></span></li><li><span class="t">جدول درهم‌سازی<small dir="ltr">Hash Tables</small></span></li><li><span class="t">گراف‌ها و پیمایش آن‌ها<small dir="ltr">Graphs, BFS &amp; DFS</small></span></li><li><span class="t">الگوریتم‌های مرتب‌سازی و جست‌وجو<small dir="ltr">Sorting &amp; Searching</small></span></li></ol></div>
+</section>
+
+<section class="ds-sec rv" id="resources">
+  <h2 class="ds-h"><span class="ds-num">۲</span><span class="ds-ht">منابع یادگیری<small dir="ltr">Learning Resources</small></span></h2>
+  <ol class="ds-steps">
+    <li class="ds-step rv"><span class="ds-dot">۱</span><div class="ds-body">
+      <h3>پیچیدگی و نمادهای مجانبی<small dir="ltr">Complexity &amp; Asymptotic Notation</small></h3>
+      <p class="ds-p">معمولاً این درس را با مفاهیم Time Complexity، Space Complexity و Asymptotic Notationها شروع می‌کنند. برای شروع، با دوره‌ی معروف الگوریتم (Abdul Bari) شروع کنید و میتونید complexity و asymptotic notationها را از اینجا مطالعه کنید (اگر مبحث دیگه‌ای لازم بود، جداگونه پیداش کنید و ببینید؛ نیم‌نگاهی هم به مباحث دیگر داخل پلی‌لیست داشته باشید و هر کدام را که نیاز داشتید ببینید).
+برای این بخش بیشتر پیشنهاد میشه تمرکزتون روی حل سوال و تمرین مکرر باشه، برای این کار هم میتونید از دوره استاد یوسفی(غیر رایگان) یا کتاب‌های ایشون، پوران آبی و پوران نارنجی رو استفاده کنید.
+
+</p>
+
+      <div class="ds-res"><a class="ds-card" style="--c:#ef4444" href="https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank" rel="noopener"><span class="ds-ico" style="--c:#ef4444">AB</span><span><b dir="ltr">Abdul Bari</b><small>پلی‌لیست یوتیوب · الگوریتم</small></span></a></div>
+    </div></li>
+    <li class="ds-step rv"><span class="ds-dot">۲</span><div class="ds-body">
+      <h3>پلی‌لیست اصلی ساختمان داده<small dir="ltr">Core Data Structures Playlist</small></h3>
+      <p class="ds-p">بعد از اینکه تا حدی با complexity و asymptotic notation راحت شدید، وقتشه که پلی‌لیست زیر (data structures mycodeschool) را شروع کنید که از همه واجب‌تره. این دوره یکی از قشنگ‌ترین دوره‌هایی هست که برای ساختمان داده وجود داره؛ نه‌تنها مسیر یادگیری را خیلی براتون هموار می‌کنه، بلکه درک و یادگیری‌تون را هم قوی می‌کنه.</p>
+      <div class="ds-res"><a class="ds-card" style="--c:#f97316" href="https://youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" target="_blank" rel="noopener"><span class="ds-ico" style="--c:#f97316">MC</span><span><b dir="ltr">mycodeschool</b><small>پلی‌لیست یوتیوب · ساختمان داده</small></span></a></div>
+    </div></li>
+    <li class="ds-step rv"><span class="ds-dot">۳</span><div class="ds-body">
+      <h3>منبع مکمل<small dir="ltr">Supplementary Resource</small></h3>
+      <p class="ds-p">در نهایت، اگر در بعضی از مباحث احساس نیاز کردید، می‌تونید نیم‌نگاهی هم به این چنل داشته باشید.</p>
+      <div class="ds-res"><a class="ds-card" style="--c:#e11d48" href="https://youtube.com/@tusharroy2525" target="_blank" rel="noopener"><span class="ds-ico" style="--c:#e11d48">TR</span><span><b dir="ltr">Tushar Roy</b><small>چنل یوتیوب</small></span></a></div>
+    </div></li>
+    <li class="ds-step rv"><span class="ds-dot">۴</span><div class="ds-body">
+      <h3>حل سوال<small dir="ltr">Problem Solving</small></h3>
+      <p class="ds-p">بعد از یادگیری، وقت اینه که سوال حل کنید و اینجا یادگیری اصلی شما شروع می‌شه. شروع می‌کنید به فکر کردن روی سوالات و کد زدن. یه سری از سوالات پایه‌ای هستند، یعنی بخشی از درس‌اند؛ کم پیش میاد کسی را پیدا کنید که کامپیوتر خونده باشه و جواب این سوالات را ندونه.</p>
+      <p class="ds-p">برای تمرین و حل سوال باید برید سراغ سایت GeeksforGeeks (خیلی از سوال‌هایی که قراره داخل تمرین‌ها و امتحان ببینید از اینجاست). برای مطالعه‌ی هر قسمت، اسم اون تاپیک را با یه gfg در انتهاش سرچ می‌کنید (مثلاً: <bdi dir="ltr">linked list gfg</bdi>)، توضیحات مربوطه را می‌خونید و سوال‌ها را به ترتیب از آسون به سخت حل می‌کنید.</p>
+      <p class="ds-p">حالا باید روی مباحثی که خوندید تسلط پیدا کنید، که با تکرار و تمرین درست می‌شه. تا اینجا شما برای ساختمان داده‌ی دانشگاه آماده‌اید.</p>
+      <div class="ds-res"><a class="ds-card" style="--c:#16a34a" href="https://www.geeksforgeeks.org" target="_blank" rel="noopener"><span class="ds-ico" style="--c:#16a34a">GfG</span><span><b dir="ltr">GeeksforGeeks</b><small>توضیح و تمرین به‌ترتیب سختی</small></span></a></div>
+    </div></li>
+    <li class="ds-step rv"><span class="ds-dot">۵</span><div class="ds-body">
+      <h3>کتاب‌ها<small dir="ltr">Books</small></h3>
+      <p class="ds-p">اگر دوست دارید از کتاب هم سوال حل کنید، کتاب آبی پوران پژوهش پیشنهاد می‌شه؛ کتاب‌هایی مثل پوران آبی استاد یوسفی و… یا حتی ویدیوهاشون می‌تونند مفید باشند. بعد از تسلط بر مباحث می‌تونید برید سراغ کتاب آقای قدسی و شروع کنید به سوال حل کردن (پیشنهاد می‌کنم کد سوالات را بزنید و با یه سری Testcase جوابتون را Validate کنید).</p>
+      <div class="ds-res"><div class="ds-card"><span class="ds-ico" style="--c:#3b82f6"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><span><b>کتاب آبی پوران پژوهش</b><small>استاد یوسفی</small></span></div><div class="ds-card"><span class="ds-ico" style="--c:#16a34a"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><span><b>کتاب آقای قدسی</b><small>تمرین با Testcase</small></span></div></div>
+    </div></li>
+    <li class="ds-step rv"><span class="ds-dot">۶</span><div class="ds-body">
+      <h3>برنامه‌نویسی رقابتی<small dir="ltr">Competitive Programming</small></h3>
+      <p class="ds-p">بعد از این قسمت، یه سری از شما به قدری به این درس علاقه‌مند می‌شید که دیگه فقط ساختمان داده‌ی دانشگاه براتون کافی نیست. از اونجایی که تنها نیستید و قبل از شما کلی آدم دیگه هم همین حس را داشتن (اهمیت خیلی زیاد ساختمان داده و الگوریتم برای شرکت‌های بزرگ دنیا و سرمایه‌گذاری‌ای که می‌کنند را از قلم نندازیم)، می‌تونید شروع کنید برای مسابقات معروف آماده بشید.</p>
+      <p class="ds-p">برای افزایش مهارت حل مسئله و آماده شدن برای شرکت در مسابقات (ICPC)، می‌تونید یک اکانت داخل Codeforces (و سایت‌های مشابه) درست کنید و با توجه به سطح دانش خودتون شروع کنید به سوال حل کردن. تا دلتون بخواد سایت هست که می‌تونید داخلش سوال حل کنید و به اصطلاح وارد مطالعه برای Competitive Programming می‌شید.</p>
+      <p class="ds-p">اینجا یه سری سوال می‌بینید که مجبور می‌شید ایده بدید تا سوال را حل کنید؛ بعد که می‌رید سرچ می‌کنید یا سراغ درس طراحی الگوریتم می‌رید، می‌بینید که ایده‌ای که دادید از قبل وجود داشته و یک الگوریتمه! و این خیلی خیلی به یادگیری الگوریتم‌های مختلف کمک می‌کنه (هر چند پیشنهاد می‌کنم همین موقع‌ها مطالعه‌ی طراحی الگوریتم را استارت بزنید). بعدش هم می‌تونید برید سراغ مسابقات ICPC.</p>
+      <p class="ds-p">برای عمیق شدن در این زمینه باید برید دنبال منابع Competitive Programming؛ هم کتاب‌های خوبی در این زمینه هست و هم ویدیوهای خوبی. پیشنهاد خود من کتاب Competitive Programming Handbook هست.</p>
+      <div class="ds-res"><a class="ds-card" style="--c:#2563eb" href="https://codeforces.com" target="_blank" rel="noopener"><span class="ds-ico" style="--c:#2563eb">CF</span><span><b dir="ltr">Codeforces</b><small>حل مسئله بر اساس سطح</small></span></a><div class="ds-card"><span class="ds-ico" style="--c:#dc2626"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><span><b dir="ltr">Competitive Programming Handbook</b><small>کتاب پیشنهادی</small></span></div></div>
+    </div></li>
+  </ol>
+</section>
+
+<section class="ds-sec rv" id="konkur">
+  <h2 class="ds-h"><span class="ds-num">۳</span><span class="ds-ht">کنکور ارشد<small dir="ltr">Graduate Entrance Exam</small></span></h2>
+
+<p class="ds-p">
+درسنامه و نکته و تست داده‌الگو (نکته و تست، دفترچه‌ی کنکور سال‌های اخیر، ۶۰۰ 
+مسئله) استاد یوسفی رو شدیدا پیشنهاد میکنم. ایشون واقعا شیرین تدریس میکنند و لذت میبرید، خیلی از دوستان دوره‌های استاد انصاری رو پیشنهاد میدند. <br>که خوب پیشنهاد میشه از هر دو استاد عزیز نمونه ویدئو نگاه کنید و بعد تصمیم بگیرید که کدوم منبع رو تهیه کنید. 
+
+</p>
+
+  
+  <div class="ds-more rv"><span>برای اطلاعات بیشتر درباره‌ی کنکور ارشد کامپیوتر</span><a class="btn btn-primary" href="https://virgool.io/@ZahraKhodamoradi/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AF%D8%B1%D9%88%D8%B3-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%DA%A9%D8%A7%D9%85%D9%BE%DB%8C%D9%88%D8%AA%D8%B1-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%DA%A9%D9%86%DA%A9%D9%88%D8%B1-%D8%A7%D8%B1%D8%B4%D8%AF-fgrt8gmvfvdu" target="_blank" rel="noopener">مطالعه‌ی راهنمای کامل ←</a></div>
+</section>
+
+<section class="ds-sec rv" id="olympiad">
+  <h2 class="ds-h"><span class="ds-num">۴</span><span class="ds-ht">المپیاد دانشجویی<small dir="ltr">Student Olympiad</small></span></h2>
+  <div class="ds-soon rv"><div class="ds-soon-ico"><svg class="ic" aria-hidden="true"><use href="#i-trophy"/></svg></div><div><b>محتوای این بخش به‌زودی اضافه می‌شود</b><p>منابع و تجربه‌های مخصوص المپیاد دانشجویی در همین بخش قرار می‌گیرد.</p></div></div>
+  <div class="ds-more rv"><span>تجربه‌ی یک دانشجو از المپیاد دانشجویی</span><a class="btn btn-primary" href="https://virgool.io/@mahyartabari/%D8%AF%D8%B1-%D8%A7%D9%84%D9%85%D9%BE%DB%8C%D8%A7%D8%AF-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C%DB%8C-%D8%A8%D8%B1-%D9%85%D9%86-%DA%86%D9%87-%DA%AF%D8%B0%D8%B4%D8%AA-qqzcgnkc1ug8-qqzcgnkc1ug8-qqzcgnkc1ug8-qqzcgnkc1ug8" target="_blank" rel="noopener">مطالعه‌ی مقاله ←</a></div>
+</section>
+
+<section class="ds-sec rv" id="comments">
+  <h2 class="ds-h"><span class="ds-num">۵</span><span class="ds-ht">نظرات و پیشنهادها<small dir="ltr">Comments &amp; Suggestions</small></span></h2>
+  <p class="ds-p">اگر منبع خوبی برای این درس می‌شناسید که در این صفحه نیست، اگر لینکی خراب شده یا اطلاعاتی قدیمی است، یا تجربه‌ای دارید که می‌تواند به بقیه کمک کند، همین‌جا بنویسید. نظرها، پیشنهادها و انتقادهای شما به بهتر شدن این مرجع کمک می‌کند.</p>
+  <ul class="ds-ask"><li><svg class="ic" aria-hidden="true"><use href="#i-books"/></svg>معرفی منبع جدید</li><li><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>گزارش لینک خراب</li><li><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg>اشتباه یا ابهام در متن</li><li><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg>تجربه‌ی شخصی</li><li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg>پرسش درباره‌ی درس</li></ul>
+  <div class="ds-comments">
+    <div class="ds-comments-head"><div class="ds-soon-ico"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg></div><div><b>گفت‌وگو درباره‌ی این صفحه</b><small>برای ثبت نظر لازم است با حساب GitHub وارد شوید.</small></div></div>
+    <div id="giscus-box"></div>
+  </div>
+</section>
+</main>
+<footer>
+    <div class="container-xl footer-inner">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="brand">
+            <span class="logo"><img src="../assets/img/logo.png" alt="" width="64" height="64"></span>
+            <span class="title" dir="ltr">CompMate</span>
+          </a>
+          <p>
+            یک مرجع آموزشی برای دانشجویان مهندسی کامپیوتر؛ شامل منابع درسی، مسیرهای یادگیری، مهارت‌های نرم و تجربیات مشاوره.
+          </p>
+        </div>
+        <div class="footer-columns">
+          <div>
+            <h3 class="footer-heading">دسترسی سریع</h3>
+            <ul class="footer-list text-muted">
+              <li><a href="../resources.html">منابع آموزشی</a></li>
+              <li><a href="../paths.html">مسیرهای یادگیری</a></li>
+              <li><a href="../soft-skills.html">مهارت‌های نرم</a></li>
+              <li><a href="../students.html">مشاوره</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">ارتباط با ما</h3>
+            <ul class="footer-list text-muted">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:contact@ce-reference.ir">contact@ce-reference.ir</a></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg><a href="https://github.com" target="_blank" rel="noreferrer">گیت‌هاب پروژه</a></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>دانشگاه — ایران</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-muted">
+        <p>© ۱۴۰۵ CompMate — تمام حقوق محفوظ است.</p>
+        <p class="font-mono-accent">Built with ♥ for CE Students</p>
+      </div>
+    </div>
+  </footer>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/comments.js"></script>
+<script>
+document.documentElement.classList.add('js');
+(function(){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08});document.querySelectorAll('.rv').forEach(function(n){io.observe(n)})})();
+(function(){var l=[].slice.call(document.querySelectorAll('.ds-nav a')),s=l.map(function(a){return document.querySelector(a.getAttribute('href'))});
+function f(){var y=window.scrollY+160,i=0;s.forEach(function(e,k){if(e.offsetTop<=y)i=k});l.forEach(function(a,k){a.classList.toggle('on',k==i)})}
+var pb=document.getElementById('dsp');function g(){var h=document.documentElement;pb.style.transform='scaleX('+Math.min(1,scrollY/(h.scrollHeight-innerHeight||1))+')'}addEventListener('scroll',function(){f();g()},{passive:true});f();g()})();
+</script>
+</body>
+</html>

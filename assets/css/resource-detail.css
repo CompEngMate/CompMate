@@ -1,0 +1,74 @@
+/* =========================================================================
+   resource-detail.css — resources/*.html (single course detail pages)
+   ========================================================================= */
+
+.detail-hero {
+  position: relative; overflow: hidden; border-radius: 1.5rem; border: 1px solid hsl(var(--border));
+  background: linear-gradient(135deg, hsl(var(--primary) / .05), hsl(var(--card)) 55%, hsl(var(--card)));
+  padding: 2rem;
+}
+.detail-hero-blob {
+  position: absolute; top: -4rem; left: 20%; width: 12rem; height: 12rem; border-radius: 999px;
+  background: hsl(var(--primary) / .1); filter: blur(70px); pointer-events: none;
+}
+.detail-hero-content { position: relative; }
+.detail-hero-badges { display: flex; align-items: center; gap: .6rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.detail-title { font-size: clamp(1.5rem, 4vw + .6rem, 2rem); font-weight: 800; margin: 0 0 .3rem; }
+.detail-subtitle { margin: 0 0 1.2rem; }
+.detail-desc { line-height: 1.9; max-width: 42rem; margin: 0; }
+
+.prereq-section { margin-top: 2.5rem; }
+.section-heading { display: flex; align-items: center; gap: .5rem; font-size: 1.25rem; font-weight: 700; margin: 0 0 1rem; }
+.prereq-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+.prereq-link, .prereq-empty {
+  display: inline-flex; align-items: center; gap: .5rem; border-radius: .9rem; padding: .6rem 1rem; font-size: .875rem;
+}
+.prereq-link { border: 1px solid hsl(var(--border)); background: hsl(var(--card)); transition: border-color .2s ease, color .2s ease; }
+.prereq-link:hover { border-color: hsl(var(--primary) / .4); color: hsl(var(--primary)); }
+.prereq-empty { border: 1px dashed hsl(var(--border)); background: hsl(var(--muted) / .3); color: hsl(var(--muted-foreground)); }
+
+.resources-section { margin-top: 3rem; }
+.resources-section-title { font-size: 1.5rem; font-weight: 800; margin: 0 0 1.5rem; }
+
+.res-group-card { background: hsl(var(--card) / .4); border: 1px solid hsl(var(--border)); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.25rem; }
+.res-group-title { display: flex; align-items: center; gap: .5rem; font-size: 1.05rem; font-weight: 700; margin: 0 0 1rem; }
+.res-item {
+  display: flex; align-items: flex-start; gap: .75rem; border-radius: .9rem; border: 1px solid hsl(var(--border));
+  background: hsl(var(--card)); padding: 1rem;
+  transition: border-color .2s ease, background-color .2s ease;
+}
+.res-item:hover { border-color: hsl(var(--primary) / .4); background: hsl(var(--primary) / .02); }
+.res-icon {
+  width: 2.5rem; height: 2.5rem; border-radius: .6rem; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; background: hsl(var(--primary) / .1); color: hsl(var(--primary));
+}
+.res-item-content { min-width: 0; }
+.res-item-title { font-weight: 700; font-size: .9rem; }
+.res-item-meta { display: flex; gap: .5rem; font-size: .75rem; margin-top: .25rem; flex-wrap: wrap; }
+
+.projects-section { margin-top: 3rem; }
+.projects-section p.section-intro { margin: 0 0 1.5rem; font-size: .9rem; }
+.project-card {
+  border-radius: 1rem; border: 1px solid hsl(var(--border)); background: hsl(var(--card)); padding: 1.25rem;
+  transition: border-color .3s ease, box-shadow .3s ease;
+}
+.project-card:hover { border-color: hsl(var(--primary) / .4); box-shadow: 0 20px 30px -20px hsl(var(--primary) / .18); }
+.project-card-head { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: .75rem; }
+.project-card-head h4 { margin: 0; font-size: 1rem; font-weight: 700; }
+.project-desc { font-size: .875rem; line-height: 1.7; margin: 0 0 1rem; }
+.project-tags { display: flex; gap: .4rem; flex-wrap: wrap; }
+.tag-pill {
+  display: inline-flex; align-items: center; gap: .3rem; border-radius: .4rem; padding: .25rem .5rem;
+  font-size: .7rem; background: hsl(var(--primary) / .06); color: hsl(var(--primary));
+}
+.project-link {
+  display: flex; align-items: center; gap: .4rem; margin-top: 1rem;
+  border-top: 1px solid hsl(var(--border)); padding-top: .75rem; font-size: .85rem;
+}
+
+.comments-section { margin-top: 3.5rem; padding: 1.5rem 1.75rem; }
+.comments-section h2 { display: flex; align-items: center; gap: .5rem; font-size: 1.5rem; font-weight: 800; margin: 0 0 .5rem; }
+.comments-section p.section-intro { margin: 0 0 1.5rem; font-size: .9rem; }
+#giscusThread { min-height: 150px; }
+
+.back-link-row { margin-top: 2.5rem; }

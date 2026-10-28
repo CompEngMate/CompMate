@@ -1,0 +1,31 @@
+/* =========================================================================
+   paths.css — paths.html only
+   ========================================================================= */
+
+.page-head { margin-bottom: 2rem; }
+.page-eyebrow { font-size: .85rem; font-weight: 600; margin-bottom: .4rem; }
+.page-title { font-size: clamp(1.5rem, 4vw + .5rem, 1.9rem); font-weight: 800; margin: 0 0 .6rem; }
+.page-lede { max-width: 38rem; line-height: 1.8; }
+
+.path-trigger-icon { color: #fff; }
+.path-trigger-body { flex: 1; }
+.path-trigger-body h2 { font-size: 1.15rem; font-weight: 700; margin: 0; }
+.path-trigger-body p { font-size: .875rem; margin: .2rem 0 0; line-height: 1.6; }
+.path-trigger-meta { display: flex; gap: .75rem; font-size: .75rem; margin-top: .4rem; }
+
+.path-steps { position: relative; }
+.path-step { position: relative; display: flex; gap: 1.25rem; margin-bottom: 1.5rem; }
+.path-step:last-child { margin-bottom: 0; }
+.path-step-num {
+  z-index: 1; flex-shrink: 0; width: 3.5rem; height: 3.5rem; border-radius: 999px;
+  border: 2px solid hsl(var(--primary)); background: hsl(var(--card));
+  display: flex; align-items: center; justify-content: center; font-weight: 700;
+}
+.path-step-card { flex: 1; padding: 1.25rem; }
+.path-step-card h3 { display: flex; align-items: center; gap: .5rem; font-size: 1.05rem; font-weight: 700; margin: 0 0 .4rem; }
+.path-step-label { font-size: .7rem; font-weight: 400; }
+.path-step-desc { font-size: .875rem; line-height: 1.7; margin: 0 0 .75rem; }
+.path-step-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+.path-step-tag { display: flex; align-items: center; gap: .3rem; }
+
+.path-placeholder { font-size: .9rem; }

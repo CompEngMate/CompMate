@@ -1,0 +1,41 @@
+/* =========================================================================
+   student-detail.css — students/*.html (single student profile pages)
+   ========================================================================= */
+
+.profile-card { overflow: hidden; }
+.profile-banner { height: 8rem; background: linear-gradient(90deg, hsl(var(--primary) / .2), #22d3ee22); }
+.profile-body { padding: 0 1.5rem 1.5rem; }
+.profile-head { display: flex; gap: 1.25rem; align-items: flex-end; margin-top: -4rem; flex-wrap: wrap; }
+.profile-avatar {
+  width: 8rem; height: 8rem; border-radius: 1rem; border: 4px solid hsl(var(--card));
+  background: hsl(var(--muted)); display: flex; align-items: center; justify-content: center; font-size: 3rem;
+}
+.profile-name-wrap { flex: 1; padding-bottom: .25rem; }
+.profile-name { font-size: clamp(1.25rem, 3vw + .6rem, 1.5rem); font-weight: 800; margin: 0; }
+.profile-role { margin: .15rem 0 0; }
+.profile-meta-grid { margin-top: 1.5rem; }
+.profile-meta-card { padding: 1rem; background: hsl(var(--muted) / .3); }
+.profile-meta-label { font-size: .7rem; }
+.profile-meta-value { font-size: .875rem; font-weight: 600; margin-top: .2rem; }
+
+.profile-section { margin-top: 1.5rem; padding: 1.5rem; }
+.profile-section + .profile-section { margin-top: 1.25rem; }
+.profile-section h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 .75rem; }
+.profile-about { line-height: 1.9; margin: 0; }
+
+.profile-skills { display: flex; flex-wrap: wrap; gap: .5rem; }
+.profile-skill-pill { font-size: .85rem; padding: .4rem .9rem; }
+
+.profile-achievements { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: .6rem; }
+.profile-achievements li { display: flex; gap: .5rem; font-size: .875rem; line-height: 1.6; }
+
+.profile-advice {
+  border-color: hsl(var(--primary) / .2);
+  background: linear-gradient(135deg, hsl(var(--primary) / .06), hsl(var(--card)));
+}
+.profile-advice p { line-height: 1.9; margin: 0; }
+
+.profile-ask h2 { font-size: 1.1rem; font-weight: 700; margin: 0 0 .4rem; }
+.profile-ask p.section-intro { font-size: .875rem; margin: 0 0 1.25rem; }
+
+.profile-back-link { margin-top: 2rem; }
