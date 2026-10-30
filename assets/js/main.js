@@ -128,7 +128,7 @@ function initStatCounters(root = document) {
     const target = parseInt(el.dataset.count, 10) || 0;
     const valueEl = el.querySelector(".num-value");
     if (!valueEl) return;
-    if (reduceMotion || target <= 1) {
+    if (true) { // numbers appear at once: no count-up animation
       valueEl.textContent = target.toLocaleString("fa-IR");
       return;
     }
