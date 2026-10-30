@@ -482,21 +482,31 @@ body[data-page="qa.html"] .page-title::after { margin-inline: auto; }
 .mobile-menu a.active { font-weight: 700; background-image: linear-gradient(transparent 76%, hsl(var(--mark) / .8) 76%); background-size: fit-content; }
 
 /* Course and path titles */
-.course-card h3, .path-card-body h3 { position: relative; isolation: isolate; background: none !important; text-decoration: none; }
-.course-card h3::after, .path-card-body h3::after {
+.course-card h3 { position: relative; isolation: isolate; background: none !important; text-decoration: none; }
+.course-card h3::after {
   content: ""; position: absolute; inset-inline: -.15em; bottom: .12em; height: .42em; z-index: -1;
   background: hsl(var(--mark)); opacity: .8;
   -webkit-mask: var(--swipe) center / 100% 100% no-repeat; mask: var(--swipe) center / 100% 100% no-repeat;
   transform: scaleX(0); transform-origin: right; transition: transform .3s ease;
 }
-.course-card:hover h3::after, .course-card:focus-visible h3::after,
-.path-card:hover h3::after, .path-card:focus-visible h3::after { transform: scaleX(1); }
-.path-card:hover h3 { text-decoration: none; }
+.course-card:hover h3::after, .course-card:focus-visible h3::after { transform: scaleX(1); }
 
 /* Section index on course pages and reading emphasis: same gold, lighter touch */
 .ds-nav a.on { background: hsl(var(--mark) / .4) !important; }
 .ds-p strong, .ds-body strong { background: linear-gradient(transparent 74%, hsl(var(--mark) / .6) 74%); }
 .text-link-cta { text-decoration-thickness: 2px; text-underline-offset: .35em; }
 @media (prefers-reduced-motion: reduce) {
-  .nav-links a::after, .course-card h3::after, .path-card-body h3::after { transition: none; }
+  .nav-links a::after, .course-card h3::after { transition: none; }
 }
+
+/* Learning-path cards on the home page: same quiet hover as the rows on the paths page */
+.path-card:hover h3 { text-decoration: none; }
+.path-card { transition: background-color .2s, border-color .2s; }
+a.card.path-card:hover { background: hsl(var(--muted) / .6); border-color: hsl(var(--border)); }
+
+/* Chart: boxes that open a course page */
+.chart-node[role="link"] { cursor: pointer; position: relative; }
+.chart-node[role="link"]::after {
+  content: "↗"; position: absolute; top: .2rem; inset-inline-start: .4rem; font-size: .68rem; line-height: 1; opacity: .55;
+}
+.chart-node[role="link"]:hover::after, .chart-node[role="link"]:focus-visible::after { opacity: 1; }

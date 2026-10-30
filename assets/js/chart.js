@@ -34,7 +34,7 @@ const NODES = [
   { id: 'khanevadeh', term: 1, label: 'دانش خانواده و جمعیت', credit: 2, cat: 'general' },
 
   // Term 2
-  { id: 'barnameh-pishrafte', term: 2, label: 'برنامه‌سازی پیشرفته', credit: 3, cat: 'core', href: 'resources/advanced-programming.html' },
+  { id: 'barnameh-pishrafte', term: 2, label: 'برنامه‌سازی پیشرفته', credit: 3, cat: 'core' },
   { id: 'karg-barnameh-pishrafte', term: 2, label: 'کارگاه برنامه‌نویسی پیشرفته', credit: 1, cat: 'core' },
   { id: 'riaziyat-gosaste', term: 2, label: 'ریاضیات گسسته', credit: 3, cat: 'basic' },
   { id: 'riazi2', term: 2, label: 'ریاضی عمومی ۲', credit: 3, cat: 'basic' },
@@ -44,7 +44,7 @@ const NODES = [
   { id: 'omumi1', term: 2, label: 'درس عمومی', credit: 2, cat: 'general' },
 
   // Term 3
-  { id: 'madar-mantighi', term: 3, label: 'مدارهای منطقی', credit: 3, cat: 'basic' },
+  { id: 'madar-mantighi', term: 3, label: 'مدارهای منطقی', credit: 3, cat: 'basic', href: 'resources/logic-circuits.html' },
   { id: 'az-madar-mantighi', term: 3, label: 'آزمایشگاه مدارهای منطقی', credit: 1, cat: 'basic' },
   { id: 'sakhteman-dade', term: 3, label: 'ساختمان داده‌ها و الگوریتم‌ها', credit: 3, cat: 'core', href: 'resources/data-structures.html' },
   { id: 'moadelat', term: 3, label: 'معادلات دیفرانسیل', credit: 3, cat: 'basic' },
@@ -55,17 +55,17 @@ const NODES = [
 
   // Term 4
   { id: 'jabre-khatti', term: 4, label: 'جبر خطی کاربردی', credit: 3, cat: 'core' },
-  { id: 'nazariye-zaban', term: 4, label: 'نظریه زبان‌ها و ماشین‌ها', credit: 3, cat: 'core' },
-  { id: 'tarahi-algoritm', term: 4, label: 'طراحی الگوریتم‌ها', credit: 3, cat: 'special', href: 'resources/algorithms.html' },
-  { id: 'memari-computer', term: 4, label: 'معماری کامپیوتر', credit: 3, cat: 'core' },
+  { id: 'nazariye-zaban', term: 4, label: 'نظریه زبان‌ها و ماشین‌ها', credit: 3, cat: 'core', href: 'resources/theory-of-automata-and-languages.html' },
+  { id: 'tarahi-algoritm', term: 4, label: 'طراحی الگوریتم‌ها', credit: 3, cat: 'special' },
+  { id: 'memari-computer', term: 4, label: 'معماری کامپیوتر', credit: 3, cat: 'core', href: 'resources/computer-architecture.html' },
   { id: 'az-memari', term: 4, label: 'آزمایشگاه معماری کامپیوتر', credit: 1, cat: 'core' },
   { id: 'omumi2', term: 4, label: 'درس عمومی', credit: 2, cat: 'general' },
   { id: 'omumi3', term: 4, label: 'درس عمومی', credit: 2, cat: 'general' },
 
   // Term 5
   { id: 'sistem-amel', term: 5, label: 'سیستم‌های عامل', credit: 3, cat: 'core', href: 'resources/operating-systems.html' },
-  { id: 'osoul-compiler', term: 5, label: 'اصول طراحی کامپایلر', credit: 3, cat: 'special' },
-  { id: 'signal-system', term: 5, label: 'سیگنال‌ها و سیستم‌ها', credit: 3, cat: 'core' },
+  { id: 'osoul-compiler', term: 5, label: 'اصول طراحی کامپایلر', credit: 3, cat: 'special', href: 'resources/compiler-design.html' },
+  { id: 'signal-system', term: 5, label: 'سیگنال‌ها و سیستم‌ها', credit: 3, cat: 'core', href: 'resources/signals-and-systems.html' },
   { id: 'narmafzar1', term: 5, label: 'مهندسی نرم‌افزار ۱', credit: 3, cat: 'special' },
   { id: 'ravesh-pazhouhesh', term: 5, label: 'روش پژوهش و ارائه', credit: 2, cat: 'core' },
   { id: 'omumi4', term: 5, label: 'درس عمومی', credit: 2, cat: 'general' },
@@ -76,7 +76,7 @@ const NODES = [
   { id: 'az-shabakeh', term: 6, label: 'آزمایشگاه شبکه‌های کامپیوتری', credit: 1, cat: 'core' },
   { id: 'rizpardazande', term: 6, label: 'ریزپردازنده و زبان اسمبلی', credit: 3, cat: 'core' },
   { id: 'az-rizpardazande', term: 6, label: 'آز ریزپردازنده', credit: 1, cat: 'core' },
-  { id: 'mabani-hoosh', term: 6, label: 'مبانی و کاربردهای هوش مصنوعی', credit: 3, cat: 'special', href: 'resources/artificial-intelligence.html' },
+  { id: 'mabani-hoosh', term: 6, label: 'مبانی و کاربردهای هوش مصنوعی', credit: 3, cat: 'special' },
   { id: 'osoul-payegah', term: 6, label: 'اصول طراحی پایگاه داده‌ها', credit: 3, cat: 'special', href: 'resources/databases.html' },
   { id: 'az-sistem-amel', term: 6, label: 'آزمایشگاه سیستم‌های عامل', credit: 1, cat: 'core' },
   { id: 'zaban-takhassosi', term: 6, label: 'زبان تخصصی', credit: 2, cat: 'core' },
@@ -84,7 +84,7 @@ const NODES = [
 
   // Term 7
   { id: 'zabanhaye-barnamesazi', term: 7, label: 'زبان‌های برنامه‌سازی', credit: 3, cat: 'special' },
-  { id: 'barnameh-web', term: 7, label: 'برنامه‌نویسی وب', credit: 3, cat: 'special', href: 'resources/web-programming.html' },
+  { id: 'barnameh-web', term: 7, label: 'برنامه‌نویسی وب', credit: 3, cat: 'special' },
   { id: 'narmafzar2', term: 7, label: 'مهندسی نرم‌افزار ۲', credit: 3, cat: 'special' },
   { id: 'bazyabi-etelaat', term: 7, label: 'بازیابی اطلاعات', credit: 3, cat: 'special' },
   { id: 'enteghal-dade', term: 7, label: 'انتقال داده‌ها', credit: 3, cat: 'special' },
@@ -96,7 +96,7 @@ const NODES = [
   { id: 'barnameh-mobile', term: 8, label: 'برنامه‌نویسی دستگاه‌های سیار', credit: 3, cat: 'special' },
   { id: 'hoosh-mohasebati', term: 8, label: 'مبانی هوش محاسباتی', credit: 3, cat: 'special' },
   { id: 'dade-kavi', term: 8, label: 'داده‌کاوی', credit: 3, cat: 'special' },
-  { id: 'tarahi-digital', term: 8, label: 'طراحی سیستم‌های دیجیتال برنامه‌پذیر', credit: 3, cat: 'special', href: 'resources/information-security.html' },
+  { id: 'tarahi-digital', term: 8, label: 'طراحی سیستم‌های دیجیتال برنامه‌پذیر', credit: 3, cat: 'special' },
 ];
 
 // prerequisite arrows: [from, to]  (from = prerequisite, to = course that needs it)
